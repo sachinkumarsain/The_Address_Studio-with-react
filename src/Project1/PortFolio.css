@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.projectType{
+    background-color: rgb(232, 230, 230);;
+    padding: 80px 0;
+    width: 100%;
+}
+.projectType h1{
+    font-size: 40px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+.project {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+ .project .residantal,.project .commercial{
+    width: 40%;
+    text-align: center;
+    border-radius: 3px;
+    margin: 0px 50px;
+    color: white;
+    z-index: 1;
+    position: relative;
+    background-color: rgb(48, 47, 47);
+    box-shadow: 0 0 14px 4px rgb(180, 180, 180);
+    padding-bottom: 20px;
+    transition: all 0.5s ease;
+}
+.project .residantal::before,.project .commercial::before{
+    content: "";
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    width: 0;
+    height: 0;
+    transition: all 1s ease;
+    background-color: rgba(0, 0, 0,0.5);
+
+}
+.project .residantal:hover::before,.project .commercial:hover::before{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    transition-duration:1s ;
+
+}
+
+
+.project .residantal:hover,.project .commercial:hover{
+    transform: scale(1.04);
+}
+
+
+.project .residantal img,.project .commercial img{
+    width: 100%;
+    height: 450px;
+    margin-bottom: 15px;
+    border-top-left-radius: 3px;
+    border-top-right-radius:3px ;
+
+}
+  
+.project .residantal h2 a,.project .commercial h2 a{
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    z-index: 3;
+}

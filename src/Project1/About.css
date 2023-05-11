@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.about{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.box1{
+    width: 80%;
+    border-radius:3px ;
+    margin: 50px 0;
+    box-shadow: 0 0 10px 4px rgb(175, 174, 174);
+    height: 700px;
+    background: url(../image/123.jpg) no-repeat scroll center / cover;
+}
+.box2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 0px;
+    background-color: rgb(232, 230, 230);
+    color: white;
+
+
+
+}
+
+.box2 .box21{
+    border-radius: 3px;
+    width:30%;
+    margin: 0px 50px;
+    z-index: 2;
+    padding-bottom: 20px;
+    box-shadow: 0 0 14px 4px rgb(137, 135, 135);
+    background-color: rgb(60, 58, 58);
+   
+}
+.box2 .box21 h1,.box2 .box21 p{
+    padding-top: 10px 0px;
+}
+.box2 .box21 h1{
+    font-size: 30px;
+}
+.box2 .box21 p{
+    font-size: 22px;
+}
+.box2 .box21 img{
+    width: 100%;
+    border-top-left-radius: 3px;
+    border-top-right-radius:3px ;
+    height: 400px;
+}
+.meetTeam{
+    margin: 50px 0px;
+}
+.meetTeam h1{
+    font-size: 40px;
+    margin-left: 30px;
+   
+}
+.meet{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.meet .meet1{
+    width: 30%;
+    border-radius: 3px;
+    z-index: 2;
+    margin:60px;
+    text-align: center;
+    color: white;
+    padding-bottom: 20px;
+    transition: all 0.5s ease;
+    box-shadow: 0 0 14px 4px rgb(188, 185, 185);
+    background-color: rgb(60, 58, 58);
+
+}
+.meet .meet1:hover{
+    transform: scale(1.03);
+}
+.meet .meet1 img{
+    width: 100%;
+    height: 500px;
+    border-top-left-radius: 3px;
+    border-top-right-radius:3px ;
+}
