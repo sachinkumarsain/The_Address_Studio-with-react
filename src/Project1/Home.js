@@ -32,7 +32,7 @@ function Home() {
             <a onClick={openMenu} href=""><MenuOutlinedIcon/></a>
           </header>
 
-          <div className='menu' style={{right:(menu===false)?"-250px":"0px"}}>
+          <div className='menu' style={{right:(menu===false)?"-100%":"0px"}}>
             <ul>
               <li className='menuLogoLine'><img src={logo}></img>< CloseIcon className='close'  onClick={closeMenu}/></li>
               <li><a href=''>Home<HomeIcon/></a></li>
